@@ -1,0 +1,8 @@
+!_TAG_FILE_ENCODING	utf-8	//
+<Plug>(operator-swap)	operator_swap.jax	/*<Plug>(operator-swap)*
+<Plug>(operator-swap-marking)	operator_swap.jax	/*<Plug>(operator-swap-marking)*
+operator-swap-example	operator_swap.jax	/*operator-swap-example*
+operator-swap-interface	operator_swap.jax	/*operator-swap-interface*
+operator-swap-introduction	operator_swap.jax	/*operator-swap-introduction*
+operator-swap-mapping	operator_swap.jax	/*operator-swap-mapping*
+operator-swap.txt	operator_swap.jax	/*operator-swap.txt*

@@ -1,0 +1,40 @@
+*operator-swap.txt*	任意の textobj を入れ替える operator
+
+
+==============================================================================
+概要						*operator-swap-introduction*
+
+任意の2つの textobj を入れ替える operator です。
+
+- Requires
+  operator-user - https://github.com/kana/vim-operator-user
+
+
+==============================================================================
+設定例						*operator-swap-example*
+
+>
+	" 入れ替える元の textobj を選択する
+	nmap <C-m> <Plug>(operator-swap-marking)
+	
+	" 入れ替える先の textobj を選択して入れ替える
+	nmap <C-p> <Plug>(operator-swap)
+<
+
+==============================================================================
+インターフェース				*operator-swap-interface*
+
+------------------------------------------------------------------------------
+マッピング					*operator-swap-mapping*
+
+<Plug>(operator-swap)				*<Plug>(operator-swap)*
+	|<Plug>(operator-swap-marking)| で選択した textobj と入れ替える。
+	入れ替える textobj は同バッファデ選択したものが対象になる。
+
+<Plug>(operator-swap-marking)				*<Plug>(operator-swap-marking)*
+	|<Plug>(operator-swap)| で入れ替える textobj を選択する。
+	ここで選択する textobj はハッファ単位で管理される。
+
+
+==============================================================================
+vim:tw=78:fo=tcq2mM:ts=8:ft=help:norl
