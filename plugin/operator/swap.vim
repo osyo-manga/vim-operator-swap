@@ -16,7 +16,7 @@ nnoremap <silent> <Plug>(operator-swap-reset) :<C-u>call operator#swap#reset()<C
 
 " call operator#user#define('swap-paste', 'operator#swap#paste')
 " call operator#user#define('swap-yank-register', 'operator#swap#yank_register')
-" call operator#user#define('swap-last-yank', 'operator#swap#do', ":call operator#swap#last_yank()")
+call operator#user#define('swap-last-yank', 'operator#swap#do', ":call operator#swap#last_yank()")
 
 
 let &cpo = s:save_cpo

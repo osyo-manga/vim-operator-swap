@@ -3,7 +3,7 @@ let s:save_cpo = &cpo
 set cpo&vim
 
 
-let s:V = vital#of("vital")
+let s:V = vital#operator_swap#of()
 let s:Buffer = s:V.import("Coaster.Buffer")
 let s:Search = s:V.import("Coaster.Search")
 let s:Highlight = s:V.import("Coaster.Highlight")
